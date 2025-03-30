@@ -51,14 +51,13 @@ const Customizer = () => {
     if (!prompt) return alert("Please enter a prompt");
     try {
       // call backend
-
     } catch (error) {
       alert(error);
     } finally {
       setGeneratingImg(false);
       setActiveEditorTab("");
     }
-
+  }; 
 
   const handleDecals = (type, result) => {
     const decalType = DecalTypes[type];
