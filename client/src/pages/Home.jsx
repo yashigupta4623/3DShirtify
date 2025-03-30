@@ -21,18 +21,18 @@ const Home = () => {
       {snap.intro && (
         <motion.section className="home" {...slideAnimation("left")}>
           <motion.header {...slideAnimation("down")}>
-            <img src="./threejs.png" alt="logo" className="w-10 h-10 object-contain" />
+            <img src="./threejs.png" alt="logo" className="w-15 h-12 object-contain" />
           </motion.header>
 
           <motion.div className="home-content" {...headContentAnimation}>
             <motion.div {...headTextAnimation}>
-              <h1 className="head-text">
+              <h1 className="head-text" style={{ color: snap.color }}>
                 LET'S <br className="xl:block hidden" /> DO IT.
               </h1>
               </motion.div>
 
               <motion.div {...headContainerAnimation} className="flex flex-col gap-5">
-                <p className="max-w-md font-normal text-gray-600 text-base">
+                <p className="max-w-md font-normal text-white text-base">
                   Create your unique and exclusive shirt with our brand-new 3D customization tool.
                   <strong> Unleash your imagination</strong>{" "} andnd define your own style.
                 </p>
